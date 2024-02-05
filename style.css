@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a{
+    transition-duration: 0.5s;
+}
+a:hover{
+    color: #AAA;
+}
+img{
+    width: 100%;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transition-duration: 0.5s;
+}
+/* start header */
+header{
+    font-family: 'Raleway', sans-serif;
+    background-color: hsl(217, 28%, 15%);
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header .logo{
+    width: 150px;
+}
+header .UlList ul{
+    list-style: none;
+    width: 300px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+/* end header */
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(217, 28%, 15%);
+}
+/* section one start */
+.SectionOne{
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.SectionOne .TextSectionOne .title{
+    font-size: 20px;
+}
+.SectionOne .TextSectionOne .pargraph{
+    margin: 30px auto 20px;
+    width: 75%;
+}
+.SectionOne .TextSectionOne .button button{
+    padding: 10px 75px;
+    border: none;
+    border-radius: 50px;
+    background-color: hsl(198, 100%, 63%);
+}
+/* section one end */
+/* section tow start */
+.SectionTow{
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(0,350px));
+    gap: 100px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.SectionTow .pro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.SectionTow .pro img{
+    width: 100px;
+    margin-bottom: 30px;
+}
+.SectionTow .pro p{
+    margin-top: 15px;
+    font-size: 13px;
+}
+/* section tow end */
+/* section three start */
+.SectionThree{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1050px;
+    margin: auto;
+    margin-bottom: 150px;
+}
+.SectionThree .image{
+    max-width: 525px;
+}
+.SectionThree .TextSectionThree{
+    max-width: 450px;
+    padding: 0 25px;
+}
+.SectionThree .TextSectionThree h1{
+    width: 65%;
+    font-size: 25px;
+}
+.SectionThree p{
+    font-size: 13px;
+}
+.SectionThree .TextSectionThree a{
+    color: hsl(198, 100%, 63%);
+    text-decoration: underline;
+    font-size: 13px;
+}
+.SectionThree .TextSectionThree a img{
+    width: 15px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+/* section three end */
+/* section four start */
+.SectionFour{
+    max-width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(0,calc(950px/3)));
+    gap: 50px;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+}
+.SectionFour .quotes{
+    position: absolute;
+    width: 75px;
+    z-index: -1;
+    transform: translate(-10px,-80%);
+}
+.SectionFour .comment{
+    background-color: hsl(219, 30%, 18%);
+    padding: 40px 30px 20px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.SectionFour .comment .profile{
+    display: flex;
+}
+.SectionFour .comment .profile .inf{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.SectionFour .comment .profile .inf b{
+    font-size: 11px;
+}
+.SectionFour .comment .profile .inf small{
+    font-size: 8px;
+}
+.SectionFour .comment .profile .image img{
+    width: 25px;
+    border-radius: 50%;
+}
+/* section four end */
+/* section five start */
+.SectionFive{
+    max-width: 750px;
+    min-height: 275px;
+    border-radius: 5px;
+    background-color: hsl(218, 28%, 13%);
+    margin: auto;
+    padding: 50px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transform: translateY(50%);
+}
+.SectionFive h1{
+    font-size: 25px;
+}
+.SectionFive p{
+    font-size: 13px;
+}
+.SectionFive form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.SectionFive form input{
+    width: 65%;
+    padding: 15px 35px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+}
+.SectionFive form button{
+    width: 30%;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 50px;
+    background-color: hsl(198, 100%, 63%);
+}
+/* section five end */
+/* footer start */
+footer{
+    background-color: hsl(216, 53%, 9%);
+    padding: 225px 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer img{
+    width: 15px;
+    margin-right: 20px;
+}
+footer .DivOne{
+    max-width: 325px;
+}
+footer .DivOne .text {
+    padding-top: 15px;
+    display: flex;
+    font-size: 13px;
+}
+footer .DivOne > img{
+    width: 100px;
+}
+footer ul{
+    line-height: 2;
+    list-style: none;
+}
+.UlOne li{
+    display: flex;
+}
+.UlFour{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100px;
+}
+.UlFour li ion-icon{
+    border: 1px white solid;
+    border-radius: 50%;
+    padding: 5px;
+}
+footer ul, .DivOne{
+    margin-bottom: 50px;
+}
+/* footer end */
+
+
+@media (max-width:375px){
+    .SectionThree .TextSectionThree h1{
+        width: 100%;
+        font-size: 17px;
+    }
+    .SectionFive form input{
+        width: 100%;
+    }
+    .SectionFive form button{
+        width: 100%;
+        margin: 10px auto;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .UlFour{
+        align-self: center;
+    }
+}
